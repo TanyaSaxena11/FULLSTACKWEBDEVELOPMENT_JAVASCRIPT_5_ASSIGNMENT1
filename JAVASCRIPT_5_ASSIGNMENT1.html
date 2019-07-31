@@ -1,0 +1,25 @@
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>JavaScript Classes</title>
+    </head>
+    <body>
+        <script>
+            class Rectangle{
+                constructor(length,breadth){
+                    this.length = length;
+                    this.breadth = breadth;
+                }
+
+                calculateArea(){
+                        var result = this.length * this.breadth;
+                        return result;
+                    }
+                }
+            
+            var myObj = new Rectangle(10,5);            
+            console.log('The area of rectangle is ' + myObj.calculateArea() +".");
+        </script>
+    </body>
+</html>
